@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Smooch+Sans:wght@100..900&display=swap');
+
+.todo-board {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  margin: 0;
+  list-style-type: none;
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+}
+
+.todo-board li {
+  list-style-type: none;
+}
+
+.todo-board::-webkit-scrollbar {
+  width: 10px;
+}
+
+.todo-board::-webkit-scrollbar-thumb {
+  background: linear-gradient(35deg, rgb(0 191 254), rgb(0 146 213));
+  border-radius: 10px;
+  border: 3px solid #ccc;
+}
+
+
+.bg {
+  background-image: url(assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.board h1 {
+  font-family: "Macondo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.todo-board {
+  width: 100%;
+  height: 550px;
+  resize: none;
+  background: transparent;
+  border: 1px solid rgb(13 192 227 / 48%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.mess {
+  position: relative;
+  border-radius: 5px;
+  background: #dadada;
+  margin-top: 50px;
+  padding: 0px 100px;
+  height: 74px;
+  background: transparent;
+  border: 1px ridge rgb(0 136 254);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 3px 10px rgb(0 187 218);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.mess input {
+  margin-top: 8.5px;
+  height: 55px;
+  border-radius: 10px;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  padding-left: 40px;
+  font-size: 30px;
+  font-family: "Macondo", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  background: transparent;
+  border: px solid rgb(13 192 227 / 48%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: gray;
+  border-radius: 50px;
+}
+
+.mess button {
+  margin-top: 15px;
+  background: url("assets/plus.png") no-repeat center; 
+  border: none;
+  position: absolute;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+.mess img {
+  margin-top: 8px;
+  border: none;
+  position: absolute;
+  left: 30px;
+  font-size: 64px;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background: #FDE8B4;
+  border: px solid rgb(13 192 227 / 48%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  border-radius: 20px;
+  font-family: "Smooch Sans", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .board {
+    padding: 15px;
+  }
+  .mess {
+    flex-direction: column;
+    align-items: center;
+    height: 54px;
+    padding: 0px 50px;
+  }
+  #task-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .mess input {
+    font-size: 20px;
+    padding-left: 30px;
+    height: 35px;
+  }
+  .mess button{
+    width: 25px;
+    right: 15px;
+    height: 25px;
+  }
+  .mess img {
+    height: 30px;
+    margin-top: 12px;
+    left: 15px;
+    width: 30px;
+  }
+}
+
+
+/* Media query for tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+  .board {
+    padding: 20px;
+  }
+  .mess {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #task-input {
+    width: 100%;
+  }
+  .mess input {
+    font-size: 25px;
+  }
+}
+
+
+/* Media query for desktops */
+@media (min-width: 1025px) {
+  .container {
+    padding: 30px;
+  }
+  .board {
+  }
+  .mess {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #task-input {
+    width: 100%;
+  }
+  .mess input {
+    font-size: 30px;
+  }
+
+}
+
+
+
+
+
