@@ -139,7 +139,7 @@ li {
     padding: 10px;
   }
   .board {
-    padding: 15px;
+/*     padding: 15px; */
   }
   .mess {
     flex-direction: column;
@@ -176,7 +176,7 @@ li {
     padding: 20px;
   }
   .board {
-    padding: 20px;
+/*     padding: 20px; */
   }
   .mess {
     flex-direction: row;
